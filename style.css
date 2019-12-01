@@ -1,0 +1,185 @@
+/* CSS STYLE */
+
+:root {
+  --primary-color: rgba(11, 32, 83, 0.75);
+  --primary-color1: rgba(222, 101, 238, 0.75);
+  --primary-color2: rgba(136, 79, 211, 0.75);
+  --primary-color3: rgba(243, 94, 88, 0.75);
+  --secondary-color: rgba(229, 148, 0 , 0.9);
+  --overlay-color: rgba(14, 8, 104, 0.85);
+  --menu-speed: 0.75s;
+}
+/* RESET*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+#showcase1{
+  background: var(--primary-color1);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+#showcase2{
+  background: var(--primary-color2);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+#showcase3{
+  background: var(--primary-color3);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+#showcase4{
+  background: var(--primary-color1);
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+
+#showcase1:before {
+  content: '';
+  background: url('candy1.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#showcase2:before {
+  content: '';
+  background: url('candy2.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#showcase3:before {
+  content: '';
+  background: url('candy6.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#showcase4:before {
+  content: '';
+  background: url('candy7.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#showcase1 .showcase1-container, #showcase2 .showcase2-container, #showcase3 .showcase3-container, #showcase4 .showcase4-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+#showcase1 #showcase2 #showcase3 #showcase4 h1 {
+  font-size: 4rem;
+}
+/* making the para a little bigger too, 1.3REM
+*/
+#showcase1 #showcase2 #showcase3 #showcase4 p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+#cakes .items {
+  display: flex;
+  padding: 1rem;
+}
+
+
+#cakes .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+
+.fit-picture {
+  width: 80%;
+}
+/* contact*/
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Section: Contact */
+ 
+#contact {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 10% 5% 10%;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+#contact .contact-form .form-group {
+  margin: 1rem;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+}
